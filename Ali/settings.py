@@ -35,7 +35,7 @@ PROTECTED_VIEW_PASSWORD = 'Bared664'
 CRONJOBS = [
     ('* * * * *', 'cuentas.tasks.actualizar_estado_vencimiento'),  # Ejecutar cada minuto
 ]
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -69,6 +69,8 @@ INSTALLED_APPS = [
     'Aplicaciones.Recepcion',
     'Aplicaciones.Produccion',
     'django.contrib.humanize',
+    'corsheaders'
+
 ] 
 CORS_ALLOWED_ORIGINS = [
     'https://alifrutworkpress-bbhbdhdqebdqf9a3.eastus-01.azurewebsites.net',
@@ -160,7 +162,7 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / "Aplicaciones/Trabajo/static" / "Aplicaciones/Calidad/static" / "Aplicaciones/Produccion/static" / "Aplicaciones/Recepcion/static"]
+STATICFILES_DIRS = [ 'Aplicaciones/Trabajo/static',BASE_DIR / "Aplicaciones/Trabajo/static" / "Aplicaciones/Calidad/static" / "Aplicaciones/Produccion/static" / "Aplicaciones/Recepcion/static"]
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
