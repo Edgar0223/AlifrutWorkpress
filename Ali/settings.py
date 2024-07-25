@@ -29,6 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / "media"  # Ajusta la ruta según la estructura de tu proyecto
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROTECTED_VIEW_PASSWORD = 'Bared664'
 
 CRONJOBS = [
@@ -69,6 +70,13 @@ INSTALLED_APPS = [
     'Aplicaciones.Produccion',
     'django.contrib.humanize',
 ] 
+CORS_ALLOWED_ORIGINS = [
+    'https://alifrutcompany.azurewebsites.net',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://alifrutcompany.azurewebsites.net',
+]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
