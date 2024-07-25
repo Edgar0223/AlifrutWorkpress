@@ -164,7 +164,7 @@ USE_TZ = False
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [ 
     'Aplicaciones/Trabajo/static',
-    "Aplicaciones/Trabajo/static",
+    "Aplicaciones/cuentas/static",
     "Aplicaciones/Calidad/static", 
     "Aplicaciones/Produccion/static",
     "Aplicaciones/Recepcion/static"
