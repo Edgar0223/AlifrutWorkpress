@@ -109,9 +109,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'Alifrut2',
-        'USER': 'root',
+        'USER': 'Edgar664',
         'PASSWORD':'Bared664',
         'PORT':'3306',
+        'HOST':"alifrut2024.mysql.database.azure.com"
     }
 }
 
