@@ -164,10 +164,7 @@ USE_TZ = False
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [ 
     'Aplicaciones/Trabajo/static',
-    "Aplicaciones/cuentas/static",
-    "Aplicaciones/Calidad/static", 
-    "Aplicaciones/Produccion/static",
-    "Aplicaciones/Recepcion/static",
+
     ]
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
