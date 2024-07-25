@@ -73,11 +73,11 @@ INSTALLED_APPS = [
 
 ] 
 CORS_ALLOWED_ORIGINS = [
-    'https://alifrutworkpress-bbhbdhdqebdqf9a3.eastus-01.azurewebsites.net',
+    'https://alifrutworkspace.azurewebsites.net',
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://alifrutworkpress-bbhbdhdqebdqf9a3.eastus-01.azurewebsites.net',
+    'https://alifrutworkspace.azurewebsites.net',
 ]
 
 MIDDLEWARE = [
